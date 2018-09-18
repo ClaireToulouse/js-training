@@ -5,7 +5,13 @@
  * and return the total
  *
  */
-
+function total (array) {
+	let totalArray = 0;
+	for(let i=0;i<array.length;i++) {
+		totalArray = totalArray + (array[i]);
+	}
+	return totalArray;
+}
 
 //* Begin of tests
 const assert = require('assert')

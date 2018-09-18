@@ -10,6 +10,43 @@
 
 // Your code :
 
+function multiply (number1, number2) {
+	let count=0;
+	let total=0;
+	
+	if ((number2 === 0) || (number1 === 0)) {
+		return 0;
+	}
+
+	else {
+		if (number2<0){
+			while (count>number2) {
+				total = number1 + total;
+				count = (count-1);
+			}	
+				if ((number1<0)||(number2<0)){
+					return -total;
+				}
+				else {
+					return total;
+				}
+
+		}
+		else if (number2>0) {
+			while (count<number2) {
+				total = number1 + total;
+				count = count+1;
+			}
+			if (number1<0){
+				return total;
+			}
+			else {
+				return total;
+			}
+		}
+	}
+}
+
 //* Begin of tests
 const assert = require('assert')
 
