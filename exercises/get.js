@@ -17,8 +17,22 @@ const sourceObject = {
 
 // Your code :
 
-function get() {
-	return sourceObject[num,bool,str,log];
+function get (type) {
+	if (type==='num') {
+		return (sourceObject.num);
+			}
+	if (type==='bool') {
+		return (sourceObject.bool);		
+	}
+	if (type==='str') {
+		return (sourceObject.str);		
+	}
+	if (type==='log') {
+		return (sourceObject.log);		
+	}
+	if (type==='') {
+		return (sourceObject);		
+	}
 }
 
 //* Begin of tests
